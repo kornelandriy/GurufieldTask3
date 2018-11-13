@@ -26,7 +26,9 @@
           <e p="People.cs" t="Include" />
         </e>
         <e p="GurufieldTask3.DAL.csproj" t="IncludeRecursive" />
-        <e p="Interfaces" t="Include" />
+        <e p="Interfaces" t="Include">
+          <e p="IRepository.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.1" t="Include">
@@ -34,7 +36,9 @@
             </e>
           </e>
         </e>
-        <e p="Repositories" t="Include" />
+        <e p="Repositories" t="Include">
+          <e p="PersonRepository.cs" t="Include" />
+        </e>
       </e>
       <e p="GurufieldTask3.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />

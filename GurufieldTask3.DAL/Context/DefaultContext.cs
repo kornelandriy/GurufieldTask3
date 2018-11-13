@@ -7,7 +7,7 @@ namespace GurufieldTask3.DAL.Context
     {
         static DefaultContext()
         {
-            Database.SetInitializer<DefaultContext>(new StoreDbInitializer());
+            Database.SetInitializer(new StoreDbInitializer());
         }
 
         public DefaultContext(string connectionString)
