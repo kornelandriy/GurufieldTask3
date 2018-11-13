@@ -1,0 +1,47 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\Kornel\\RiderProjects\\GurufieldTask3\\GurufieldTask3.DAL\\GurufieldTask3.DAL.csproj",
+    "projectName": "GurufieldTask3.DAL",
+    "projectPath": "C:\\Users\\Kornel\\RiderProjects\\GurufieldTask3\\GurufieldTask3.DAL\\GurufieldTask3.DAL.csproj",
+    "outputPath": "C:\\Users\\Kornel\\RiderProjects\\GurufieldTask3\\GurufieldTask3.DAL\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.1"
+    ],
+    "frameworks": {
+      "netcoreapp2.1": {
+        "projectReferences": {}
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.1": {
+      "dependencies": {
+        "EntityFramework": {
+          "target": "Package",
+          "version": "[6.2.0, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.0, )",
+          "autoReferenced": true
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

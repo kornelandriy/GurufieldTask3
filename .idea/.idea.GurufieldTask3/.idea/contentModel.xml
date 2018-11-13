@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Kornel\.Rider2018.2\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\Kornel\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Kornel\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_GurufieldTask3.-1964757780.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Kornel\RiderProjects\GurufieldTask3" t="IncludeFlat">
+      <e p="GurufieldTask3" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="GurufieldTask3.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="GurufieldTask3.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="GurufieldTask3.DAL" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Context" t="Include">
+          <e p="DefaultContext.cs" t="Include" />
+        </e>
+        <e p="Entities" t="Include">
+          <e p="People.cs" t="Include" />
+        </e>
+        <e p="GurufieldTask3.DAL.csproj" t="IncludeRecursive" />
+        <e p="Interfaces" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="GurufieldTask3.DAL.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repositories" t="Include" />
+      </e>
+      <e p="GurufieldTask3.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
