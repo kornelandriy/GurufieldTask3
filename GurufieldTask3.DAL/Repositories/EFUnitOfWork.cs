@@ -2,27 +2,23 @@ using System;
 using GurufieldTask3.DAL.Context;
 using GurufieldTask3.DAL.Entities;
 using GurufieldTask3.DAL.Interfaces;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 
 namespace GurufieldTask3.DAL.Repositories
 {
     public class EfUnitOfWork : IUnitOfWork
     {
-        private PersonRepository _personRepository;
         private readonly DefaultContext _defaultContext;
 
         private bool _disposed;
+        private PersonRepository _personRepository;
 
-        public EfUnitOfWork()
+        public EfUnitOfWork(IDataOptions dataOptions)
         {
-            _defaultContext = new DefaultContext();
+            _defaultContext = new DefaultContext(dataOptions);
         }
 
-        public IRepository<Person> Peoples
-        {
-            get { return _personRepository ?? (_personRepository = new PersonRepository(_defaultContext)); }
-        }
+        public IRepository<Person> Peoples =>
+            _personRepository ?? (_personRepository = new PersonRepository(_defaultContext));
 
         public void Save()
         {

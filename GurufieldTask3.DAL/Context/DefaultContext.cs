@@ -1,23 +1,23 @@
 using GurufieldTask3.DAL.Entities;
+using GurufieldTask3.DAL.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 
 namespace GurufieldTask3.DAL.Context
 {
     public class DefaultContext : DbContext
     {
-//        private IConfiguration _configuration;
-//        public DefaultContext(IConfiguration configuration): base()
-//        {
-//            _configuration = configuration;
-//        }
-        public DbSet<Person> Peoples { get; set; }
-        
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        private readonly IDataOptions _configuration;
+
+        public DefaultContext(IDataOptions configuration)
         {
-            optionsBuilder.UseSqlServer(@"Server=localhost\SQLEXPRESS;Database=peoples;Trusted_Connection=True;");
-//            optionsBuilder.UseSqlServer(_configuration.GetConnectionString("DefaultConnectionString"));
+            _configuration = configuration;
         }
 
+        public DbSet<Person> Peoples { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(_configuration.ConnectionString);
+        }
     }
 }
