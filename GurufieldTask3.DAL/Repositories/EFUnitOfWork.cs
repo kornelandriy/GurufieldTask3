@@ -8,13 +8,11 @@ namespace GurufieldTask3.DAL.Repositories
     public class EfUnitOfWork : IUnitOfWork
     {
         private readonly DefaultContext _defaultContext;
-
-        private bool _disposed;
         private PersonRepository _personRepository;
 
-        public EfUnitOfWork(IDataOptions dataOptions)
+        public EfUnitOfWork(IConfigurations configurations)
         {
-            _defaultContext = new DefaultContext(dataOptions);
+            _defaultContext = new DefaultContext(configurations);
         }
 
         public IRepository<Person> Peoples =>
@@ -25,18 +23,9 @@ namespace GurufieldTask3.DAL.Repositories
             _defaultContext.SaveChanges();
         }
 
-        protected virtual void Dispose(bool disposing)
-        {
-            if (!_disposed)
-            {
-                if (disposing) _defaultContext.Dispose();
-                _disposed = true;
-            }
-        }
-
         public void Dispose()
         {
-            Dispose(true);
+            _defaultContext.Dispose();
             GC.SuppressFinalize(this);
         }
     }

@@ -29,10 +29,10 @@
         </e>
         <e p="GurufieldTask3.DAL.csproj" t="IncludeRecursive" />
         <e p="Infrastructure" t="Include">
-          <e p="DatabaseOptions.cs" t="Include" />
+          <e p="Configurations.cs" t="Include" />
         </e>
         <e p="Interfaces" t="Include">
-          <e p="IDataOptions.cs" t="Include" />
+          <e p="IConfigurations.cs" t="Include" />
           <e p="IRepository.cs" t="Include" />
           <e p="IUnitOfWork.cs" t="Include" />
         </e>

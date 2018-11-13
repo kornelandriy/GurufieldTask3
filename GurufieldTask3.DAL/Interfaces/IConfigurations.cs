@@ -1,6 +1,6 @@
 namespace GurufieldTask3.DAL.Interfaces
 {
-    public interface IDataOptions
+    public interface IConfigurations
     {
         string ConnectionString { get; set; }
     }

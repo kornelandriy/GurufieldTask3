@@ -6,9 +6,9 @@ namespace GurufieldTask3.DAL.Context
 {
     public class DefaultContext : DbContext
     {
-        private readonly IDataOptions _configuration;
+        private readonly IConfigurations _configuration;
 
-        public DefaultContext(IDataOptions configuration)
+        public DefaultContext(IConfigurations configuration)
         {
             _configuration = configuration;
         }

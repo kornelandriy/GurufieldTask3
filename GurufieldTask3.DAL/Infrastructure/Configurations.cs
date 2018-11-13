@@ -2,9 +2,9 @@ using GurufieldTask3.DAL.Interfaces;
 
 namespace GurufieldTask3.DAL.Infrastructure
 {
-    public class DatabaseOptions : IDataOptions
+    public class Configurations : IConfigurations
     {
-        public DatabaseOptions(string connectionString)
+        public Configurations(string connectionString)
         {
             ConnectionString = connectionString;
         }
