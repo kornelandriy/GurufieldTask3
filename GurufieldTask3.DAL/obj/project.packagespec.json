@@ -26,9 +26,17 @@
   "frameworks": {
     "netcoreapp2.1": {
       "dependencies": {
-        "EntityFramework": {
+        "Microsoft.EntityFrameworkCore": {
           "target": "Package",
-          "version": "[6.2.0, )"
+          "version": "[2.2.0-preview3-35497, )"
+        },
+        "Microsoft.EntityFrameworkCore.Design": {
+          "target": "Package",
+          "version": "[2.2.0-preview3-35497, )"
+        },
+        "Microsoft.EntityFrameworkCore.SqlServer": {
+          "target": "Package",
+          "version": "[2.2.0-preview3-35497, )"
         },
         "Microsoft.NETCore.App": {
           "suppressParent": "All",

@@ -1,31 +1,23 @@
-using System.Data.Entity;
 using GurufieldTask3.DAL.Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace GurufieldTask3.DAL.Context
 {
     public class DefaultContext : DbContext
     {
-        static DefaultContext()
-        {
-            Database.SetInitializer(new StoreDbInitializer());
-        }
-
-        public DefaultContext(string connectionString)
-            : base(connectionString)
-        {
-        }
-
+//        private IConfiguration _configuration;
+//        public DefaultContext(IConfiguration configuration): base()
+//        {
+//            _configuration = configuration;
+//        }
         public DbSet<Person> Peoples { get; set; }
-    }
-
-    public class StoreDbInitializer : DropCreateDatabaseIfModelChanges<DefaultContext>
-    {
-        protected override void Seed(DefaultContext db)
+        
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            db.Peoples.Add(new Person {Name = "Andriy", Age = 31});
-            db.Peoples.Add(new Person {Name = "Victor", Age = 27});
-            db.Peoples.Add(new Person {Name = "Ivan", Age = 36});
-            db.SaveChanges();
+            optionsBuilder.UseSqlServer(@"Server=localhost\SQLEXPRESS;Database=peoples;Trusted_Connection=True;");
+//            optionsBuilder.UseSqlServer(_configuration.GetConnectionString("DefaultConnectionString"));
         }
+
     }
 }

@@ -6,6 +6,8 @@
     <e p="C:\Users\Kornel\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_GurufieldTask3.-1964757780.00" t="ExcludeRecursive" />
     <e p="C:\Users\Kornel\RiderProjects\GurufieldTask3" t="IncludeFlat">
       <e p="GurufieldTask3" t="IncludeRecursive">
+        <e p="App.cs" t="Include" />
+        <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="GurufieldTask3.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -28,6 +30,12 @@
         <e p="GurufieldTask3.DAL.csproj" t="IncludeRecursive" />
         <e p="Interfaces" t="Include">
           <e p="IRepository.cs" t="Include" />
+          <e p="IUnitOfWork.cs" t="Include" />
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="20181113193040_InitialCreate.cs" t="Include" />
+          <e p="20181113193040_InitialCreate.Designer.cs" t="Include" />
+          <e p="DefaultContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -37,6 +45,7 @@
           </e>
         </e>
         <e p="Repositories" t="Include">
+          <e p="EFUnitOfWork.cs" t="Include" />
           <e p="PersonRepository.cs" t="Include" />
         </e>
       </e>

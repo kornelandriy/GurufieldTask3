@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using GurufieldTask3.DAL.Context;
 using GurufieldTask3.DAL.Entities;
 using GurufieldTask3.DAL.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace GurufieldTask3.DAL.Repositories
 {
