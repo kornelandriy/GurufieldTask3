@@ -1,0 +1,14 @@
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3\bin\Debug\netcoreapp2.1\GurufieldTask3.deps.json
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3\bin\Debug\netcoreapp2.1\GurufieldTask3.runtimeconfig.json
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3\bin\Debug\netcoreapp2.1\GurufieldTask3.runtimeconfig.dev.json
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3\bin\Debug\netcoreapp2.1\GurufieldTask3.dll
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3\bin\Debug\netcoreapp2.1\GurufieldTask3.pdb
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3\bin\Debug\netcoreapp2.1\GurufieldTask3.DAL.dll
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3\bin\Debug\netcoreapp2.1\GurufieldTask3.DAL.pdb
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3\obj\Debug\netcoreapp2.1\GurufieldTask3.csprojAssemblyReference.cache
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3\obj\Debug\netcoreapp2.1\GurufieldTask3.csproj.CoreCompileInputs.cache
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3\obj\Debug\netcoreapp2.1\GurufieldTask3.AssemblyInfoInputs.cache
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3\obj\Debug\netcoreapp2.1\GurufieldTask3.AssemblyInfo.cs
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3\obj\Debug\netcoreapp2.1\GurufieldTask3.csproj.CopyComplete
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3\obj\Debug\netcoreapp2.1\GurufieldTask3.dll
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3\obj\Debug\netcoreapp2.1\GurufieldTask3.pdb

@@ -1,0 +1,11 @@
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3.DAL\bin\Debug\netcoreapp2.1\GurufieldTask3.DAL.deps.json
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3.DAL\bin\Debug\netcoreapp2.1\GurufieldTask3.DAL.dll
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3.DAL\bin\Debug\netcoreapp2.1\GurufieldTask3.DAL.pdb
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3.DAL\obj\Debug\netcoreapp2.1\GurufieldTask3.DAL.csprojAssemblyReference.cache
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3.DAL\obj\Debug\netcoreapp2.1\GurufieldTask3.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3.DAL\obj\Debug\netcoreapp2.1\GurufieldTask3.DAL.AssemblyInfoInputs.cache
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3.DAL\obj\Debug\netcoreapp2.1\GurufieldTask3.DAL.AssemblyInfo.cs
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3.DAL\obj\Debug\netcoreapp2.1\GurufieldTask3.DAL.dll
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3.DAL\obj\Debug\netcoreapp2.1\GurufieldTask3.DAL.pdb
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3.DAL\bin\Debug\netcoreapp2.1\GurufieldTask3.DAL.runtimeconfig.json
+C:\Users\Kornel\RiderProjects\GurufieldTask3\GurufieldTask3.DAL\bin\Debug\netcoreapp2.1\GurufieldTask3.DAL.runtimeconfig.dev.json
