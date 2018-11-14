@@ -6,18 +6,18 @@ namespace GurufieldTask3.DAL.Context
 {
     public class DefaultContext : DbContext
     {
-        private readonly IConfigurations _configuration;
+        private readonly IConfigurations _configurations;
 
-        public DefaultContext(IConfigurations configuration)
+        public DefaultContext(IConfigurations configurations)
         {
-            _configuration = configuration;
+            _configurations = configurations;
         }
 
         public DbSet<Person> Peoples { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(_configuration.ConnectionString);
+            optionsBuilder.UseSqlServer(_configurations.ConnectionString);
         }
     }
 }

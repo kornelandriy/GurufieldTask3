@@ -5,12 +5,14 @@ using GurufieldTask3.DAL.Interfaces;
 
 namespace GurufieldTask3.DAL.Repositories
 {
-    public class EfUnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly DefaultContext _defaultContext;
         private PersonRepository _personRepository;
 
-        public EfUnitOfWork(IConfigurations configurations)
+        private bool _disposed;
+
+        public UnitOfWork(IConfigurations configurations)
         {
             _defaultContext = new DefaultContext(configurations);
         }
@@ -23,9 +25,18 @@ namespace GurufieldTask3.DAL.Repositories
             _defaultContext.SaveChanges();
         }
 
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!_disposed)
+            {
+                if (disposing) _defaultContext.Dispose();
+                _disposed = true;
+            }
+        }
+
         public void Dispose()
         {
-            _defaultContext.Dispose();
+            Dispose(true);
             GC.SuppressFinalize(this);
         }
     }

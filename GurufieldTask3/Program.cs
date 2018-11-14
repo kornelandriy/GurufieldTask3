@@ -23,9 +23,10 @@ namespace GurufieldTask3
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json", true, true);
             var configuration = builder.Build();
+            
             serviceCollection.AddTransient<IConfigurations>(s =>
                 new Configurations(configuration.GetConnectionString("DefaultConnection")));
-            serviceCollection.AddSingleton<IUnitOfWork, EfUnitOfWork>();
+            serviceCollection.AddSingleton<IUnitOfWork, UnitOfWork>();
             serviceCollection.AddTransient<App>();
         }
     }
