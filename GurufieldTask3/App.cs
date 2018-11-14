@@ -6,14 +6,13 @@ using GurufieldTask3.Extensions;
 
 namespace GurufieldTask3
 {
-    public class App
+    public class App : IDisposable
     {
         private readonly IUnitOfWork _unitOfWork;
 
-        public App(IUnitOfWork unitOfWork)
-        {
-            _unitOfWork = unitOfWork;
-        }
+        public App(IUnitOfWork unitOfWork) => _unitOfWork = unitOfWork;
+
+        public void Dispose() => _unitOfWork?.Dispose();
 
         public void Run()
         {
@@ -21,7 +20,7 @@ namespace GurufieldTask3
             AddPerson(new Person {Name = "Andriy", Age = 37});
 
             GetPeoples().ToScreen();
-            
+
             Console.ReadKey();
         }
 
@@ -31,9 +30,6 @@ namespace GurufieldTask3
             _unitOfWork.Save();
         }
 
-        private IEnumerable<Person> GetPeoples()
-        {
-            return _unitOfWork.Peoples.GetAll();
-        }
+        private IEnumerable<Person> GetPeoples() => _unitOfWork.Peoples.GetAll();
     }
 }
