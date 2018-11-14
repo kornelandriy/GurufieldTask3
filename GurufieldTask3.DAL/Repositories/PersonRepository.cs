@@ -12,35 +12,17 @@ namespace GurufieldTask3.DAL.Repositories
     {
         private readonly DefaultContext _defaultContext;
 
-        public PersonRepository(DefaultContext context)
-        {
-            _defaultContext = context;
-        }
+        public PersonRepository(DefaultContext context) => _defaultContext = context;
 
-        public IEnumerable<Person> GetAll()
-        {
-            return _defaultContext.Peoples;
-        }
+        public IEnumerable<Person> GetAll() => _defaultContext.Peoples;
 
-        public Person Get(int id)
-        {
-            return _defaultContext.Peoples.Find(id);
-        }
+        public Person Get(int id) => _defaultContext.Peoples.Find(id);
 
-        public void Create(Person book)
-        {
-            _defaultContext.Peoples.Add(book);
-        }
+        public void Create(Person book) => _defaultContext.Peoples.Add(book);
 
-        public void Update(Person book)
-        {
-            _defaultContext.Entry(book).State = EntityState.Modified;
-        }
+        public void Update(Person book) => _defaultContext.Entry(book).State = EntityState.Modified;
 
-        public IEnumerable<Person> Find(Func<Person, bool> predicate)
-        {
-            return _defaultContext.Peoples.Where(predicate).ToList();
-        }
+        public IEnumerable<Person> Find(Func<Person, bool> predicate) => _defaultContext.Peoples.Where(predicate).ToList();
 
         public void Delete(int id)
         {
